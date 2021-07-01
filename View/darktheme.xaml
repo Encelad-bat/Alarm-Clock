@@ -24,5 +24,19 @@
         <Setter Property="Background" Value="Purple"></Setter>
         <Setter Property="Foreground" Value="WhiteSmoke"></Setter>
     </Style>
-    
+
+    <Style x:Key="Buttons_StackPanel" TargetType="StackPanel">
+        <Setter Property="Background" Value="Purple"></Setter>
+    </Style>
+
+    <Style x:Key="Set_Alarm" TargetType="Button">
+        <Setter Property="Background" Value="Purple"></Setter>
+        <Setter Property="Foreground" Value="WhiteSmoke"></Setter>
+    </Style>
+
+    <Style x:Key="Restore_Settings" TargetType="Button">
+        <Setter Property="Background" Value="Purple"></Setter>
+        <Setter Property="Foreground" Value="WhiteSmoke"></Setter>
+    </Style>
+
 </ResourceDictionary>

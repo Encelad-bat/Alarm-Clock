@@ -23,4 +23,18 @@
         <Setter Property="Background" Value="LightGoldenrodYellow"></Setter>
         <Setter Property="Foreground" Value="Black"></Setter>
     </Style>
+
+    <Style x:Key="Buttons_StackPanel" TargetType="StackPanel">
+        <Setter Property="Background" Value="LightGoldenrodYellow"></Setter>
+    </Style>
+
+    <Style x:Key="Set_Alarm" TargetType="Button">
+        <Setter Property="Background" Value="LightGoldenrodYellow"></Setter>
+        <Setter Property="Foreground" Value="Black"></Setter>
+    </Style>
+
+    <Style x:Key="Restore_Settings" TargetType="Button">
+        <Setter Property="Background" Value="LightGoldenrodYellow"></Setter>
+        <Setter Property="Foreground" Value="Black"></Setter>
+    </Style>
 </ResourceDictionary>

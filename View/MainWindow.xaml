@@ -18,7 +18,7 @@
         </Grid.ColumnDefinitions>
 
         <DockPanel x:Name="TimeDate_DockPanel" Grid.Row="0" Grid.Column="0" Style="{DynamicResource TimeDate_DockPanel}">
-            <TextBlock x:Name="TimeDate_TextBlock" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TimeDate_TextBlock}">
+            <TextBlock DataContext="{Binding Current}" x:Name="TimeDate_TextBlock" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TimeDate_TextBlock}">
             <Run x:Name="Time_Text" Text="{Binding Path=Time}"></Run>
             <Run Text=" "></Run>
             <Run x:Name="Date_Text" Text="{Binding Path=Date}"></Run>
@@ -35,6 +35,10 @@
                 <ListViewItem x:Name="Autorun" Content="Autorun" MouseDoubleClick="Autorun_MouseDoubleClick"></ListViewItem>
                 <ListViewItem x:Name="Theme" Content="Dark Theme" MouseDoubleClick="DarkTheme_MouseDoubleClick"></ListViewItem>
             </ListView>
+        </StackPanel>
+        <StackPanel  x:Name="Buttons_StackPanel" Grid.Row="0" Grid.Column="1" Style="{DynamicResource Buttons_StackPanel}" VerticalAlignment="Bottom">
+            <Button x:Name="Set_Alarm" Content="Set Alarm" Style="{DynamicResource Set_Alarm}" MouseDoubleClick="Set_Alarm_MouseDoubleClick"></Button>
+            <Button x:Name="Restore_Settings" Content="Restore Settings To Default" Style="{DynamicResource Restore_Settings}" MouseDoubleClick="Restore_Settings_DoubleClick"></Button>
         </StackPanel>
     </Grid>
 </Window>

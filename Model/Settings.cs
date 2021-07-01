@@ -61,8 +61,12 @@ namespace TimeDate_Application.Model
             set { dark_theme = value; }
         }
 
-        public void Save()
+        public void Save(MainWindow window)
         {
+            this.Date_color = (window.Time_Text.Foreground as SolidColorBrush).Color.ToString();
+            this.Time_color = (window.Date_Text.Foreground as SolidColorBrush).Color.ToString();
+            this.Bg_color = (window.TimeDate_DockPanel.Background as SolidColorBrush).Color.ToString();
+
             string settings_path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Alarm Clock";
             if (!Directory.Exists(settings_path))
             {

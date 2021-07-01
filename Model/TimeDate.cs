@@ -13,8 +13,14 @@ namespace TimeDate_Application.Model
 
         public TimeDate()
         {
-                this.Time = DateTime.Now.ToShortTimeString();
+                this.Time = DateTime.Now.ToLongTimeString();
                 this.Date = DateTime.Now.ToShortDateString();
+        }
+
+        public TimeDate(string Time, string Date)
+        {
+            this.Time = Time;
+            this.Date = Date;
         }
     }
 }
